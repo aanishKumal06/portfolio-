@@ -499,6 +499,15 @@ nav h3 {
     font-size: 5vw;
 }
 
+#nav-mobile h4 a {
+    color: #000;
+}
+
+
+#nav-mobile h4 a:active {
+    color: #5f5f5f;
+}
+
 
 @media (max-width:600px) {
 
@@ -540,6 +549,18 @@ nav h3 {
         padding: 4vw 10vw;
         width: 100%;
         text-align: center;
+    }
+
+    #full-scr #nav-part2 h4 a {
+        color: #000;
+    }
+
+    #full-scr #nav-part2 h4 a:hover {
+        color: #e00000;
+    }
+
+    #full-scr #nav-part2 h4 a:active {
+        color: #444;
     }
 
     nav h3 {
