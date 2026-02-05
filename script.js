@@ -87,5 +87,40 @@ window.addEventListener('scroll', () => {
 
 loaderAnimation()
 
+// Mobile menu toggle
+const menuBtn = document.querySelector('nav h3');
+const navPart2 = document.querySelector('#nav-part2');
+const fullScr = document.querySelector('#full-scr');
+const fullDiv1 = document.querySelector('#full-div1');
+
+if (menuBtn && navPart2 && fullScr) {
+    // Clone nav items into full screen menu
+    const navClone = navPart2.cloneNode(true);
+    navClone.id = 'nav-mobile';
+    fullDiv1.appendChild(navClone);
+
+    menuBtn.addEventListener('click', function() {
+        if (fullScr.style.top === '0%') {
+            fullScr.style.top = '-100%';
+        } else {
+            fullScr.style.top = '0%';
+        }
+    });
+
+    // Close menu when clicking on a link in mobile menu
+    fullDiv1.addEventListener('click', function(e) {
+        if (e.target.tagName === 'A') {
+            fullScr.style.top = '-100%';
+        }
+    });
+
+    // Close menu when clicking on the overlay
+    fullScr.addEventListener('click', function(e) {
+        if (e.target === fullScr) {
+            fullScr.style.top = '-100%';
+        }
+    });
+}
+
 
 

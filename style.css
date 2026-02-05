@@ -114,6 +114,7 @@ nav {
 
 nav h3 {
     display: none;
+    cursor: pointer;
 }
 
 #center {
@@ -467,6 +468,9 @@ nav h3 {
     z-index: 99;
     top: -100%;
     transition: all ease 0.5s;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 #full-div1 {
@@ -475,6 +479,24 @@ nav h3 {
     background-color: #EFEAE3;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vw;
+}
+
+#nav-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vw;
+    width: 100%;
+}
+
+#nav-mobile h4 {
+    width: 80%;
+    text-align: center;
+    font-size: 5vw;
 }
 
 
@@ -490,6 +512,11 @@ nav h3 {
     nav {
         padding: 4vw 5vw;
         background-color: #EFEAE3;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
     }
 
     nav img {
@@ -501,6 +528,20 @@ nav h3 {
         display: none;
     }
 
+    #full-scr #nav-part2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5vw;
+    }
+
+    #full-scr #nav-part2 h4 {
+        font-size: 5vw;
+        padding: 4vw 10vw;
+        width: 100%;
+        text-align: center;
+    }
+
     nav h3 {
         display: block;
         padding: 3vw 5vw;
@@ -509,6 +550,7 @@ nav h3 {
         font-size: 4vw;
         font-weight: 200;
         padding-left: 10vw;
+        cursor: pointer;
     }
 
     #center {
@@ -597,6 +639,52 @@ nav h3 {
         object-position: center;
         width: 92%;
         margin-left: 4%;
+    }
+
+    #page5 {
+        height: auto;
+        min-height: 50vh;
+        padding: 8vw 5vw;
+    }
+
+    #page5 #footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 8vw;
+        padding: 4vw 0;
+    }
+
+    #page5 #footer-logo {
+        align-items: center;
+        text-align: center;
+        gap: 3vw;
+        min-width: 100%;
+    }
+
+    #page5 #footer-logo img {
+        width: 70px;
+    }
+
+    #page5 #footer-logo h2 {
+        font-size: 6vw;
+    }
+
+    #page5 #footer-logo p {
+        font-size: 3.5vw;
+    }
+
+    #page5 #footer-links {
+        flex-direction: column;
+        gap: 4vw;
+        width: 100%;
+    }
+
+    #page5 .footer-link {
+        font-size: 4vw;
+        padding: 3vw 6vw;
+        text-align: center;
+        width: 100%;
+        max-width: 280px;
     }
 
 }
